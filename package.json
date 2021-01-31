@@ -1,0 +1,16 @@
+{
+  "name": "lumos_labs_data_union_challenge",
+  "version": "1.0.0",
+  "description": "streamr data union api to publish data on streamr network",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "streamr-client": "^4.1.6"
+  }
+}
