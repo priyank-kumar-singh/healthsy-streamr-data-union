@@ -48,6 +48,7 @@ app.post('/heart', function(req, res) {
     resting_electrocardiographic      : req.body["Resting Electrocardiographic Result"],
     st_depression_induced_by_exercise : req.body["ST depression induced by exercise"],
     no_of_major_blood_vessels         : req.body["Number of major blood vessels"],
+    our_predicted_result              : req.body["result"],
   }).then(() => {
     console.log("Heart Streamr Success.");
     res.send("success");
@@ -69,6 +70,7 @@ app.post('/liver', function(req, res) {
     alamine_aminotransferase    : req.body["Alamine Aminotransferase"],
     aspartate_aminotransferase  : req.body["Aspartate Aminotransferase"],
     albumin_globulin_ratio      : req.body["Albumin : Globulin Ratio"],
+    our_predicted_result        : req.body["result"],
   }).then(() => {
     console.log("Liver Streamr Success.");
     res.send("success");
@@ -94,6 +96,7 @@ app.post('/sugar', function(req, res) {
     paternal_grandmother_sugar  : req.body["gmother"],
     maternal_grandfather_sugar  : req.body["mgfather"],
     maternal_grandmother_sugar  : req.body["mgmother"],
+    our_predicted_result        : req.body["result"],
   }).then(() => {
     console.log("Liver Streamr Success.");
     res.send("success");
